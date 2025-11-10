@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-Class Demo – Sharp Dark Theme</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,600,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-bg: #101726;
+            --card-bg: rgba(27, 32, 54, 0.93);
+            --accent-blue: #00aaff;
+            --accent-green: #2df7c8;
+            --accent-yellow: #ffd145;
+            --white: #eaf6fa;
+            --primary-shadow: 0 8px 32px 6px #00aaff25;
+        }
+        body {
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            background: var(--main-bg);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 36px;
+            margin-bottom: 8px;
+            font-size: 2.35rem;
+            color: var(--white);
+            letter-spacing: 2.6px;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--accent-green);
+            font-size: 1.1rem;
+            margin-bottom: 36px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+            gap: 38px;
+            margin-top: 18px;
+            flex-wrap: wrap;
+        }
+        .example {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 34px 28px 28px 28px;
+            min-width: 230px;
+            box-shadow: var(--primary-shadow);
+            border: 1.5px solid #202a42;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            transition: box-shadow 0.21s, border 0.23s, transform 0.19s;
+        }
+        .example:hover {
+            box-shadow: 0 14px 40px 9px #00aaff44, 0 2px 18px #2df7c844;
+            border: 1.5px solid var(--accent-blue);
+            transform: translateY(-5px) scale(1.035);
+        }
+        .label {
+            font-size: 1.13rem;
+            font-weight: 700;
+            margin-bottom: 13px;
+            color: var(--accent-blue);
+            letter-spacing: 1px;
+        }
+        .explanation {
+            font-size: 1rem;
+            color: #babed1;
+            text-align: center;
+            margin-bottom: 22px;
+            min-height: 44px;
+        }
+        /* Link hover demo */
+        .example-link {
+            color: var(--white);
+            background: linear-gradient(90deg,#183eb3 0%, #00aaff 100%);
+            font-size: 1.09rem;
+            font-weight: bold;
+            padding: 10px 29px;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 2px 14px #00aaff44;
+            margin-bottom: 6px;
+            border: 1.7px solid transparent;
+            position: relative;
+            transition: background 0.21s, color 0.19s, transform 0.22s, border 0.19s, box-shadow 0.25s;
+        }
+        .example-link:hover {
+            background: linear-gradient(90deg,#00aaff 0%, #2df7c8 100%);
+            color: var(--main-bg);
+            transform: scale(1.09) rotate(-2deg);
+            border: 1.7px solid var(--accent-green);
+            box-shadow: 0 6px 24px var(--accent-blue);
+            text-shadow: 0 4px 18px #2df7c844;
+        }
+
+        /* Focus demo button */
+        .example-btn {
+            background: linear-gradient(90deg, #ffd145 0%, #00aaff 100%);
+            color: var(--main-bg);
+            font-size: 1.04rem;
+            padding: 12px 32px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            margin-top: 7px;
+            font-weight: 700;
+            box-shadow: 0 2px 14px #ffd14522;
+            border: 1.7px solid transparent;
+            cursor: pointer;
+            position: relative;
+            transition: 
+                box-shadow 0.21s,
+                background 0.28s,
+                color 0.23s,
+                border 0.19s,
+                transform 0.16s;
+        }
+        .example-btn:focus {
+            background: linear-gradient(90deg,#00aaff 0%, #2df7c8 100%);
+            color: var(--white);
+            box-shadow: 0 10px 36px #00aaff66;
+            border: 1.7px solid var(--accent-blue);
+            transform: scale(1.07) rotate(0.6deg);
+        }
+        .example-btn:active {
+            animation: btn-press 0.18s cubic-bezier(0.58,2.1,0.49,1.01);
+            background: linear-gradient(90deg,#333fa9 0%, #00aaff 100%);
+            color: var(--white);
+        }
+        @keyframes btn-press {
+            0% { transform: scale(1.07); }
+            30% { transform: scale(0.96); }
+            100% { transform: scale(1); }
+        }
+
+        /* Active button demo */
+        .active-btn {
+            background: linear-gradient(89deg, #151b35 0%, #59a9fc 100%);
+            color: var(--white);
+            font-size: 1.04rem;
+            font-weight: 700;
+            padding: 12px 30px;
+            border-radius: 11px;
+            border: none;
+            outline: none;
+            margin-top: 10px;
+            box-shadow: 0 2px 14px #58bff322;
+            border: 1.7px solid transparent;
+            cursor: pointer;
+            position:relative;
+            transition: background 0.21s, color 0.19s, border 0.19s, transform 0.15s;
+        }
+        .active-btn:active {
+            animation: btn-press 0.18s cubic-bezier(0.58,2.1,0.49,1.01);
+            background: linear-gradient(89deg, #00aaff 0%, #2df7c8 100%);
+            color: var(--main-bg);
+            border: 1.7px solid var(--accent-green);
+        }
+
+        /* nth-child list demo */
+        .example-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+            margin-top: 13px;
+            width: 145px;
+        }
+        .example-list li {
+            background: linear-gradient(94deg,#1b263e 0%, #233456 100%);
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-size: 1.02rem;
+            color: var(--white);
+            transition: 
+                background 0.19s,
+                color 0.17s,
+                transform 0.18s,
+                box-shadow 0.2s;
+            box-shadow: 0 1px 6px #181d2a48;
+        }
+        .example-list li:nth-child(odd) {
+            background: linear-gradient(90deg,#00aaff 0%, #2df7c8 100%);
+            color: var(--main-bg);
+        }
+        .example-list li:nth-child(even) {
+            background: linear-gradient(90deg,#ffd145 0%, #ffb71e 100%);
+            color: #163050;
+        }
+        .example-list li:hover {
+            transform: scale(1.09) translateX(7px);
+            box-shadow: 0 8px 24px #00aaff33;
+            z-index: 2;
+        }
+
+        /* Responsive */
+        @media (max-width: 950px) {
+            .container { flex-direction: column; gap: 26px; align-items: center;}
+            h2 { font-size: 1.5rem;}
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudo-Class Demonstration</h2>
+    <div class="subtitle">
+        Clean, interactive pseudo-class effects using <span style="color: #00aaff;">:hover</span>,
+        <span style="color: #ffd145;">:focus</span>, 
+        <span style="color: #2df7c8;">:active</span>,
+        and <span style="color: #eaf6fa;">:nth-child()</span>
+    </div>
+    <div class="container">
+        <div class="example">
+            <span class="label">:hover</span>
+            <div class="explanation">Link animates with crisp background and text transitions on hover.</div>
+            <a href="#" class="example-link">Hover over me!</a>
+        </div>
+        <div class="example">
+            <span class="label">:focus</span>
+            <div class="explanation">Button glows and shifts colors elegantly when focused.</div>
+            <button class="example-btn">Focus on me!</button>
+        </div>
+        <div class="example">
+            <span class="label">:active</span>
+            <div class="explanation">Button compresses and colors shift with sharp animation on click.</div>
+            <button class="active-btn">Click me!</button>
+        </div>
+        <div class="example">
+            <span class="label">:nth-child()</span>
+            <div class="explanation">
+                Odd/even items show business gradients and animate smoothly on hover.
+            </div>
+            <ul class="example-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    background: #f1f2f6;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background: #373747;
+    border-radius: 24px;
+    padding: 32px 24px 24px 24px;
+    box-shadow: 0 8px 40px rgba(44, 44, 84, 0.2);
+    width: 340px;
+}
+
+.display {
+    color: #fff;
+    background: none;
+    font-size: 44px;
+    text-align: right;
+    padding: 24px 12px 8px 12px;
+    height: 48px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+    grid-gap: 12px;
+}
+
+.btn {
+    height: 54px;
+    border: none;
+    border-radius: 14px;
+    font-size: 24px;
+    background: #555668;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.btn.orange {
+    background: #FDB72A;
+    color: #fff;
+}
+
+.btn.gray {
+    background: #dae0e8;
+    color: #333;
+}
+
+.btn.zero {
+    grid-column: span 2;
+}
+
+.btn:active {
+    filter: brightness(0.9);
+}
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn gray">ac</button>
+            <button class="btn gray">±</button>
+            <button class="btn gray">%</button>
+            <button class="btn orange">÷</button>
+
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn orange">×</button>
+     
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn orange">-</button>
+
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn orange">+</button>
+            
+            <button class="btn zero">0</button>
+            <button class="btn">.</button>
+            <button class="btn orange">=</button>
+        </div>
+    </div>
+
+</body>
+</html>
