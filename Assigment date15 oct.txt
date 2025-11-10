@@ -1,0 +1,332 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+</head>
+<body>
+    <header>
+        <h1>Piyush Kumar</h1>
+        <p>Email: piyush@example.com | Phone: 123-456-7890</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#education">Education</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate learner with an interest in technology, coding, and problem-solving.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Teamwork</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+                <li>Personal Portfolio Website</li>
+                <li>Weather App using JavaScript</li>
+                <li>Simple Calculator in Python</li>
+            </ol>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <tr>
+                    <th>Course</th>
+                    <th>Institute</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>B.Sc. Computer Science</td>
+                    <td>ABC University</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>12th Grade</td>
+                    <td>Gyan Deep School</td>
+                    <td>2021</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Piyush Kumar. All rights reserved.
+    </footer>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog & Course Registration</title>
+</head>
+<body> -->
+    <!--
+    [Q2) and Q3]
+    Product Catalog Table
+    <h1>Online Store - Product Catalog</h1>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr style="background-color: #f2f2f2;">
+            <th rowspan="2">Product Image</th>
+            <th colspan="3">Product Details</th>
+            <th rowspan="2">Availability</th>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><img src="product1.jpg" alt="Product 1" width="80"></td>
+            <td>Wireless Mouse</td>
+            <td>Ergonomic wireless mouse with USB receiver</td>
+            <td>$15</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td><img src="product2.jpg" alt="Product 2" width="80"></td>
+            <td>Bluetooth Headphones</td>
+            <td>Over-ear headphones with noise cancellation</td>
+            <td>$40</td>
+            <td>Out of Stock</td>
+        </tr>
+        <tr>
+            <td><img src="product3.webp" alt="Product 3" width="80"></td>
+            <td>Smart Watch</td>
+            <td>Fitness tracking and notifications</td>
+            <td>$60</td>
+            <td>In Stock</td>
+        </tr>
+    </table>
+
+    <hr>
+
+     Course Registration Form
+    <h1>Course Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Register for a Course</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="web">Web Development</option>
+                <option value="python">Python Programming</option>
+                <option value="data">Data Science</option>
+            </select>
+        </fieldset>
+        <br>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <tr style="background-color: #f2f2f2;">
+                <th>Day</th>
+                <th>Time</th>
+                <th>Instructor</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>10:00 AM - 12:00 PM</td>
+                <td>Mr. Sharma</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>2:00 PM - 4:00 PM</td>
+                <td>Ms. Gupta</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>11:00 AM - 1:00 PM</td>
+                <td>Mr. Singh</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html> -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Layout Page</title>
+</head>
+<body>
+    <header>
+        <h1>TechNova Solutions</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#services">Services</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About the Company</h2>
+            <p>
+                TechNova Solutions is a leading provider of innovative technology solutions, helping businesses grow and succeed in the digital era.
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>Cloud Solutions</li>
+                <li>IT Consulting</li>
+            </ul>
+        </section>
+    </main>
+
+    <aside>
+        <blockquote>
+            "Our mission is to empower businesses with cutting-edge technology and exceptional service."
+            <br>
+            <cite>– Priya Sharma, CEO</cite>
+        </blockquote>
+    </aside>
+
+    <footer id="contact">
+        Contact: info@technova.com<br>
+        Address: 123 Innovation Park, New Delhi, India
+    </footer>
+</body>
+</html>
+
+Q3)
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Layout Page</title>
+</head>
+<body>
+    <header>
+        <h1>TechNova Solutions</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#services">Services</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About the Company</h2>
+            <p>
+                TechNova Solutions is a leading provider of innovative technology solutions, helping businesses grow and succeed in the digital era.
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>Services Offered</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Mobile App Development</li>
+                <li>Cloud Solutions</li>
+                <li>IT Consulting</li>
+            </ul>
+        </section>
+    </main>
+
+    <aside>
+        <blockquote>
+            "Our mission is to empower businesses with cutting-edge technology and exceptional service."
+            <br>
+            <cite>– Priya Sharma, CEO</cite>
+        </blockquote>
+    </aside>
+
+    <footer id="contact">
+        Contact: info@technova.com<br>
+        Address: 123 Innovation Park, New Delhi, India
+    </footer>
+</body>
+</html>
+ 
+Q6)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu Page</title>
+</head>
+<body>
+    <header>
+        <span style="font-size: 2.5em; font-weight: bold;">
+        <span>Brijwasi</span>
+        <img src="restuarent.jpeg" alt="Brijwasi Small Logo" width="40">
+    </header>
+    <nav>
+        <a href="#starters">Starters</a> |
+        <a href="#main-course">Main Course</a> |
+        <a href="#desserts">Desserts</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="starters">
+            <h2>Starters</h2>
+            <ul>
+                <li>Paneer Tikka - ₹250</li>
+                <li>Veg Spring Rolls - ₹200</li>
+                <li>Dal Makhani  - ₹300</li>
+            </ul>
+        </section>
+
+        <section id="main-course">
+            <h2>Main Course</h2>
+            <ul>
+                <li>Butter paneer - ₹400</li>
+                <li>Paneer Butter Masala - ₹350</li>
+                <li>Dal Makhani - ₹300</li>
+                <li>Jeera Rice - ₹150</li>
+                <li>Naan/Roti - ₹50</li>
+            </ul>
+        </section>
+
+        <section id="desserts">
+            <h2>Desserts</h2>
+            <ul>
+                <li>Gulab Jamun - ₹150</li>
+                <li>Rasmalai - ₹200</li>
+                <li>Kheer - ₹180</li>
+            </ul>
+        </section>
+        </main>
+        <footer id="contact">
+            <f><br>
+            Address: New Bus Stand Mathura, India
+        </footer>
+</body>
+</html>
+ 
+ 

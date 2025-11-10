@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+</head>
+<body>
+    <!-- 1. Main heading and intro -->
+    <h1>Piyush Kumar</h1>
+    <p>Hello! My name is Piyush Kumar. I am passionate about learning new things and exploring the world of technology. I enjoy coding, reading, and watching movies.</p>
+
+    <!-- 2. Hyperlink to Google -->
+    <a href="https://www.google.com" target="_blank">Visit Google</a>
+
+    <!-- 3. Favorite cartoon image -->
+    <br>
+    <img src="images.jpeg" alt="Image of my favorite cartoon character" width="300">
+
+    <!-- 4. Paragraph about hobby with <strong> and <em> -->
+    <p>
+        My favorite hobby is <strong>painting</strong>. It makes me feel <em>creative</em> and relaxed.
+    </p>
+
+    <!-- 5. Paragraph with <br> -->
+    <p>
+        I love learning new things every day.<br>
+        Exploring new topics keeps me motivated and curious.
+    </p>
+
+    <!-- 6. Blockquote with <cite> -->
+    <blockquote>
+        "The only way to do great work is to love what you do."
+        <br>
+        <cite>– Steve Jobs</cite>
+    </blockquote>
+
+    <!-- 7. Different heading levels -->
+    <h1>Piyush Kumar</h1>
+    <h2>Student</h2>
+    <h3>Hobbies: Painting, Coding, Watching Movies</h3>
+
+    <!-- 8. Paragraph with <mark> and <small> -->
+    <p>
+        My favorite subject is <mark>Computer Science</mark> because it challenges me to think logically.
+        <small>Updated recently</small>
+    </p>
+
+    <!-- 9. Paragraph with both <strong> and <em> -->
+    <p>
+        It is <strong>very important</strong> to stay <em>motivated</em> while learning new skills.
+    </p>
+
+    <!-- 10. Inline code with <code> -->
+    <p>
+        To print "Hello World" in JavaScript, use: <code>console.log("Hello World");</code>
+    </p>
+</body>
+</html>
