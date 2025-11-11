@@ -7,7 +7,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* Promo banner styles (integrated) */
     .promo-container {
         display: flex;
         align-items: center;
@@ -58,10 +57,7 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="flex flex-col-reverse md:flex-row justify-between items-center px-10 md:px-20 py-16">
-    
-    <!-- Left Content -->
     <div class="max-w-lg">
       <h2 class="text-5xl md:text-6xl font-extrabold text-green-900 leading-tight mb-6">
         Discover and <br> Find Your Own <br> Fashion!
@@ -73,8 +69,6 @@
         EXPLORE NOW
       </button>
     </div>
-
-    <!-- Right Image (AI-style clothing image) -->
     <div class="relative mb-10 md:mb-0">
       <div class="rounded-3xl w-80 h-96 md:w-[420px] md:h-[500px] shadow-md overflow-hidden">
         <img
@@ -84,10 +78,8 @@
           onerror="this.onerror=null;this.src='human.jpg';">
       </div>
     </div>
-
   </section>
 
-  <!-- Best Selling Section -->
 <section class="bg-white py-20">
   <div class="text-center mb-12">
     <h2 class="text-4xl font-bold text-green-900 mb-2">Best selling</h2>
@@ -96,10 +88,7 @@
     </a>
   </div>
 
-  <!-- Products Grid -->
   <div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 md:px-20">
-    
-    <!-- Product Card 1 -->
     <div class="flex flex-col items-center">
       <div class="rounded-md w-full h-96 overflow-hidden">
         <img
@@ -115,7 +104,6 @@
       </div>
     </div>
 
-    <!-- Product Card 2 -->
     <div class="flex flex-col items-center">
       <div class="rounded-md w-full h-96 overflow-hidden">
         <img
@@ -131,7 +119,6 @@
       </div>
     </div>
 
-    <!-- Product Card 3 -->
     <div class="flex flex-col items-center">
       <div class="rounded-md w-full h-96 overflow-hidden">
         <img
@@ -146,10 +133,8 @@
         <span class="text-yellow-500 font-bold">5.0 ★</span>
       </div>
     </div>
-
   </div>
 
-  <!-- See All Button -->
   <div class="text-center mt-14">
     <button class="border border-green-900 text-green-900 px-8 py-2 rounded-md hover:bg-green-900 hover:text-white transition">
       See all →
@@ -157,7 +142,6 @@
   </div>
 </section>
 
-<!-- Inserted: Our Products full-width section -->
 <section style="background:#fff; padding:40px 0;">
   <div style="max-width:950px;margin:0 auto;padding:20px;">
     <h2 style="text-align:center;color:#23482d;margin-bottom:20px;font-size:2.5rem;">Our products</h2>
@@ -219,9 +203,7 @@
     </div>
   </div>
 </section>
-<!-- End inserted products -->
 
-  <!-- Promo Banner Section (Integrated) -->
   <section class="promo-container" id="promo">
     <div class="promo-img">
       <img src="excited-white-girl-bright-stylish-glasses-posing-pink-dreamy-curly-woman-playing-with-her-ginger-hair-laughing 1.png" alt="Fashionable Clothing" class="rounded-lg shadow-lg">
@@ -251,21 +233,17 @@
       </button>
     </div>
   </section>
-  <!-- End Promo Banner -->
 
   <script>
-    // countdown setup: target is now + the initial values shown (12h 34m 56s)
     (function(){
       const hoursEl = document.getElementById('hours');
       const minutesEl = document.getElementById('minutes');
       const secondsEl = document.getElementById('seconds');
 
-      // parse initial displayed values (fallback if missing)
       const initialH = parseInt(hoursEl?.textContent || '12', 10);
       const initialM = parseInt(minutesEl?.textContent || '34', 10);
       const initialS = parseInt(secondsEl?.textContent || '56', 10);
 
-      // set target time relative to now (so countdown moves)
       const totalMs = ((initialH * 3600) + (initialM * 60) + initialS) * 1000;
       let target = Date.now() + totalMs;
 
@@ -274,30 +252,4 @@
         let diff = Math.max(0, target - now);
 
         const hrs = Math.floor(diff / (1000 * 60 * 60));
-        diff -= hrs * 3600 * 1000;
-        const mins = Math.floor(diff / (1000 * 60));
-        diff -= mins * 60 * 1000;
-        const secs = Math.floor(diff / 1000);
-
-        if (hoursEl) hoursEl.textContent = String(hrs).padStart(2, '0');
-        if (minutesEl) minutesEl.textContent = String(mins).padStart(2, '0');
-        if (secondsEl) secondsEl.textContent = String(secs).padStart(2, '0');
-
-        if (target - now <= 0) {
-          clearInterval(timerInterval);
-          // Optionally, start a new countdown cycle (e.g., reset for another 12h)
-          // target = Date.now() + totalMs; // uncomment to loop
-        }
-      }
-
-      update();
-      const timerInterval = setInterval(update, 1000);
-
-      // Optional: clicking SHOP NOW resets countdown (demo)
-      document.getElementById('buyNowBtn')?.addEventListener('click', function(){
-        target = Date.now() + totalMs;
-      });
-    })();
-  </script>
-</body>
-</html>
+       
