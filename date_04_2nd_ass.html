@@ -76,7 +76,6 @@
             margin-bottom: 22px;
             min-height: 44px;
         }
-        /* Link hover demo */
         .example-link {
             color: var(--white);
             background: linear-gradient(90deg,#183eb3 0%, #00aaff 100%);
@@ -99,8 +98,6 @@
             box-shadow: 0 6px 24px var(--accent-blue);
             text-shadow: 0 4px 18px #2df7c844;
         }
-
-        /* Focus demo button */
         .example-btn {
             background: linear-gradient(90deg, #ffd145 0%, #00aaff 100%);
             color: var(--main-bg);
@@ -115,12 +112,7 @@
             border: 1.7px solid transparent;
             cursor: pointer;
             position: relative;
-            transition: 
-                box-shadow 0.21s,
-                background 0.28s,
-                color 0.23s,
-                border 0.19s,
-                transform 0.16s;
+            transition: box-shadow 0.21s, background 0.28s, color 0.23s, border 0.19s, transform 0.16s;
         }
         .example-btn:focus {
             background: linear-gradient(90deg,#00aaff 0%, #2df7c8 100%);
@@ -139,8 +131,6 @@
             30% { transform: scale(0.96); }
             100% { transform: scale(1); }
         }
-
-        /* Active button demo */
         .active-btn {
             background: linear-gradient(89deg, #151b35 0%, #59a9fc 100%);
             color: var(--white);
@@ -163,8 +153,6 @@
             color: var(--main-bg);
             border: 1.7px solid var(--accent-green);
         }
-
-        /* nth-child list demo */
         .example-list {
             list-style-type: none;
             padding-left: 0;
@@ -179,11 +167,7 @@
             border-radius: 8px;
             font-size: 1.02rem;
             color: var(--white);
-            transition: 
-                background 0.19s,
-                color 0.17s,
-                transform 0.18s,
-                box-shadow 0.2s;
+            transition: background 0.19s, color 0.17s, transform 0.18s, box-shadow 0.2s;
             box-shadow: 0 1px 6px #181d2a48;
         }
         .example-list li:nth-child(odd) {
@@ -199,8 +183,6 @@
             box-shadow: 0 8px 24px #00aaff33;
             z-index: 2;
         }
-
-        /* Responsive */
         @media (max-width: 950px) {
             .container { flex-direction: column; gap: 26px; align-items: center;}
             h2 { font-size: 1.5rem;}
